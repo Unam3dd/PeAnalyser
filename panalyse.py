@@ -44,12 +44,7 @@ class PE_Analyse:
     def check_file(self, filename):
         try:
             check_file = os.path.exists(filename)
-            
-            if check_file == True:
-                return True
-            else:
-                return False
-        
+            return check_file
         except Exception as error_check_file:
             print(error_check_file)
         
